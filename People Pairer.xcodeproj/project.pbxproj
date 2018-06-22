@@ -12,6 +12,7 @@
 		D0BC76EA20DD481900BE8574 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BC76E920DD481900BE8574 /* Assets.xcassets */; };
 		D0BC76ED20DD481900BE8574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0BC76EB20DD481900BE8574 /* LaunchScreen.storyboard */; };
 		D0BC76FA20DD491200BE8574 /* PeopleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BC76F920DD491200BE8574 /* PeopleTableViewController.swift */; };
+		D0BC76FC20DD4B9500BE8574 /* PeopleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BC76FB20DD4B9500BE8574 /* PeopleController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D0BC76EC20DD481900BE8574 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0BC76EE20DD481900BE8574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0BC76F920DD491200BE8574 /* PeopleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewController.swift; sourceTree = "<group>"; };
+		D0BC76FB20DD4B9500BE8574 /* PeopleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +61,6 @@
 		D0BC76E120DD481800BE8574 /* People Pairer */ = {
 			isa = PBXGroup;
 			children = (
-				D0BC76E220DD481800BE8574 /* AppDelegate.swift */,
-				D0BC76E620DD481800BE8574 /* Main.storyboard */,
-				D0BC76E920DD481900BE8574 /* Assets.xcassets */,
-				D0BC76EB20DD481900BE8574 /* LaunchScreen.storyboard */,
-				D0BC76EE20DD481900BE8574 /* Info.plist */,
 			);
 			path = "People Pairer";
 			sourceTree = "<group>";
@@ -78,6 +75,7 @@
 		D0BC76F520DD482C00BE8574 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D0BC76FB20DD4B9500BE8574 /* PeopleController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -93,6 +91,8 @@
 		D0BC76F720DD484200BE8574 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D0BC76E620DD481800BE8574 /* Main.storyboard */,
+				D0BC76EB20DD481900BE8574 /* LaunchScreen.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -100,6 +100,9 @@
 		D0BC76F820DD484900BE8574 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D0BC76E220DD481800BE8574 /* AppDelegate.swift */,
+				D0BC76E920DD481900BE8574 /* Assets.xcassets */,
+				D0BC76EE20DD481900BE8574 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			files = (
 				D0BC76FA20DD491200BE8574 /* PeopleTableViewController.swift in Sources */,
 				D0BC76E320DD481800BE8574 /* AppDelegate.swift in Sources */,
+				D0BC76FC20DD4B9500BE8574 /* PeopleController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +326,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 84KK7ZSRKT;
-				INFOPLIST_FILE = "People Pairer/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,7 +344,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 84KK7ZSRKT;
-				INFOPLIST_FILE = "People Pairer/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

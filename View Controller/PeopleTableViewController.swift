@@ -17,6 +17,12 @@ class PeopleTableViewController: UITableViewController {
     
     // MARK: - Actions
     
+    @IBAction func addPersonButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func randomizePeopleButtonTapped(_ sender: Any) {
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

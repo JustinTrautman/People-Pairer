@@ -33,8 +33,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Title" id="IKK-Iu-CL6">
-                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="fkd-7J-BFW"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="RoE-Uf-q6H"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="fkd-7J-BFW">
+                            <connections>
+                                <action selector="randomizePeopleButtonTapped:" destination="ce7-6g-KxV" id="KJq-jb-VJa"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="RoE-Uf-q6H">
+                            <connections>
+                                <action selector="addPersonButtonTapped:" destination="ce7-6g-KxV" id="Xx1-z3-BAM"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tzy-kw-J1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
