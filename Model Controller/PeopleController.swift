@@ -8,6 +8,7 @@
 
 import Foundation
 
+// Don't need model. Typealias will be used instead
 typealias Person = String
 
 class PeopleController {
@@ -35,7 +36,7 @@ class PeopleController {
     private func fileURL() -> URL {
         
         let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        let fileName = "person.json"
+        let fileName = "people.json"
         let documentsDirectoryURL = url[0].appendingPathComponent(fileName)
         return documentsDirectoryURL
     }
@@ -57,6 +58,7 @@ class PeopleController {
         
         var randomize: [Person] = []
         for person in people {
+            // TODO: - Old Swift. Come back and update if time allows.
             let index = Int(arc4random_uniform(UInt32(randomize.count)))
             randomize.insert(person, at: index)
         }
