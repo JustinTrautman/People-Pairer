@@ -98,6 +98,10 @@ class PeopleTableViewController: UITableViewController {
         return "Pair #\(section + 1)"
     }
     
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        view.tintColor = .orange
+    }
+    
     // Weird duplicate entry error... This func takes the IP section and multiplies it by two and ands one more additional row.
     func alteredIndexPath(indexPath: IndexPath) -> Int {
         return (indexPath.section * 2) + (indexPath.row)
