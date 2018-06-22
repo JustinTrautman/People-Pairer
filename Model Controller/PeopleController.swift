@@ -58,7 +58,6 @@ class PeopleController {
         
         var randomize: [Person] = []
         for person in people {
-            // TODO: - Old Swift. Come back and update if time allows.
             let index = Int(arc4random_uniform(UInt32(randomize.count)))
             randomize.insert(person, at: index)
         }
