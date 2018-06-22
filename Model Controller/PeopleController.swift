@@ -51,6 +51,17 @@ class PeopleController {
             print("There was an error loading from persistent storage: \(error.localizedDescription)")
         }
     }
+    
+    // Randomize
+    func randomizePeople() {
+        
+        var randomize: [Person] = []
+        for person in people {
+            let index = Int(arc4random_uniform(UInt32(randomize.count)))
+            randomize.insert(person, at: index)
+        }
+        people = randomize
+    }
 
     // Update
     func savePeople() {
